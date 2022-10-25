@@ -1,7 +1,7 @@
 import breadthFirstSearch from '../breadthFirstSearch';
 import Graph from '../Graph';
 
-describe('breadth first search', () => {
+describe.concurrent('breadth first search', () => {
   test('bfs', () => {
     let graph = new Graph(
       [1, 2, 3, 4, 5, 6, 7, 8],

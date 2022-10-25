@@ -1,6 +1,6 @@
 import validParentheses from '../validParentheses';
 
-describe('validParentheses', () => {
+describe.concurrent('validParentheses', () => {
   test('should return true if parentheses are balanced', () => {
     expect(validParentheses('()')).toBe(true);
     expect(validParentheses('(abc)')).toBe(true);

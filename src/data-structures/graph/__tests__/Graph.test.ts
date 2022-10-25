@@ -1,6 +1,6 @@
 import Graph from '../Graph';
 
-describe('adjacency list', () => {
+describe.concurrent('adjacency list', () => {
   test('dfs', () => {
     let graph = new Graph(
       [1, 2, 3, 4],

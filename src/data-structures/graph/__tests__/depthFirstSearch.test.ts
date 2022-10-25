@@ -1,7 +1,7 @@
 import depthFirstSearch from '../depthFirstSearch';
 import Graph from '../Graph';
 
-describe('depth first search', () => {
+describe.concurrent('depth first search', () => {
   test('dfs', () => {
     let graph = new Graph(
       [1, 2, 3, 4, 5, 6, 7, 8],

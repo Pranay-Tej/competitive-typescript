@@ -1,7 +1,7 @@
 import { connectedComponentsBFS } from '../connectedComponents';
 import Graph from '../Graph';
 
-describe('connected', () => {
+describe.concurrent('connected', () => {
   test('bfs', () => {
     let graph = new Graph(
       [1, 2, 3, 4, 5, 6, 7, 8],

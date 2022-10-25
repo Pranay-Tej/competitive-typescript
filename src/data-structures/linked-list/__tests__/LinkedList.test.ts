@@ -1,6 +1,6 @@
 import LinkedList from '../LinkedList';
 
-describe('LinkedList', () => {
+describe.concurrent('LinkedList', () => {
   test('create empty linked list', () => {
     const linkedList = new LinkedList<Number>();
     expect(linkedList.isEmpty()).toBe(true);
@@ -55,7 +55,7 @@ describe('LinkedList', () => {
     expect(linkedList.find(5)).toBeNull();
   });
 
-  describe('delete head', () => {
+  describe.concurrent('delete head', () => {
     test('empty linkedList', () => {
       const linkedList = new LinkedList<Number>();
       expect(linkedList.deleteTail().head).toBeNull();
@@ -83,7 +83,7 @@ describe('LinkedList', () => {
     });
   });
 
-  describe('delete tail', () => {
+  describe.concurrent('delete tail', () => {
     test('empty linkedList', () => {
       const linkedList = new LinkedList<Number>();
       expect(linkedList.deleteTail().head).toBeNull();
@@ -111,7 +111,7 @@ describe('LinkedList', () => {
     });
   });
 
-  describe('reverse', () => {
+  describe.concurrent('reverse', () => {
     test('empty linkedList', () => {
       const linkedList = new LinkedList<Number>();
       expect(linkedList.reverse().head).toBeNull();

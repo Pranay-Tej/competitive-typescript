@@ -1,6 +1,6 @@
 import binarySearch from '../binarySearch';
 
-describe('binary search', () => {
+describe.concurrent('binary search', () => {
   test('finds element', () => {
     expect(binarySearch([-1, 0, 10, 20, 30], 20)).toEqual(3);
   });
