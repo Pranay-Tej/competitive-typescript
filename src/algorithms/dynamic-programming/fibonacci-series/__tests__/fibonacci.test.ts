@@ -8,7 +8,7 @@ describe('fibonacci', () => {
     });
   });
 
-  describe('fibonacciBottomUp', () => {
+  describe.concurrent('fibonacciBottomUp', () => {
     test('n=7', () => {
       expect(fibonacciBottomUp(7)).toEqual([1, 1, 2, 3, 5, 8, 13]);
     });

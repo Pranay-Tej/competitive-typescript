@@ -1,7 +1,7 @@
 import BinarySearchTree from '../BinarySearchTree';
 
-describe('BinarySearchTree', () => {
-  describe('insert', () => {
+describe.concurrent('BinarySearchTree', () => {
+  describe.concurrent('insert', () => {
     test('single node', () => {
       let binarySearchTree = new BinarySearchTree<number>();
       expect(binarySearchTree).toBeDefined();

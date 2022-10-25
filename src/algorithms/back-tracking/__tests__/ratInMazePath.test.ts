@@ -1,6 +1,6 @@
 import ratInMazePath from '../ratInMazePath';
 
-describe('rat in maze', () => {
+describe.concurrent('rat in maze', () => {
   test('single cell', () => {
     expect(ratInMazePath([[0]])).toEqual([[2]]);
   });
